@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>{{ values.society }} - {{ values.catchphrase }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -31,18 +31,26 @@
       </div>
     </nav>
 
-    <header class="masthead text-center text-white">
+    <header class="masthead text-center text-white" style='background-image: url("{{ asset('img/top.jpg') }}");'>
       <div class="masthead-content">
         <div class="container">
           <h1 class="masthead-heading mb-0">{{ values.society }}</h1>
           <h2 class="masthead-subheading mb-0">{{ values.catchphrase }}</h2>
         </div>
       </div>
-      <div class="bg-circle-1 bg-circle"></div>
-      <div class="bg-circle-2 bg-circle"></div>
-      <div class="bg-circle-3 bg-circle"></div>
-      <div class="bg-circle-4 bg-circle"></div>
     </header>
+
+    <section>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12 order-lg-1">
+            <div class="p-5">
+              <p>{{ values.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section>
       <div class="container">
@@ -101,6 +109,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-black">
       <div class="container">
+        <p class="m-0 text-center text-white small">Contact : <a href="mailto:{{ values.contact }}">{{ values.contact }}</a></p>
         <p class="m-0 text-center text-white small">Copyright &copy; {{ values.society }} {{ "now"|date("Y") }}</p>
       </div>
       <!-- /.container -->
