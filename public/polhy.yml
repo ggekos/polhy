@@ -6,12 +6,17 @@ description: |
   Besoin de fédérer vos équipes, animer un salon, étoffer vos événements, ou simplement offrir un moment convivial à vos collaborateurs ou clients ? Faites appel à nous pour donner un cadre ludique à toutes vos opérations !
   Notre équipe met à votre disposition ses compétences et son expérience pour vous offrir ses meilleurs animations personnalisées et scénarios sur mesure.
 
-title1: Team building
-description1: Fédérez vos équipes en offrant un moment convivial à vos collaborateurs ! Nous pouvons organiser des activités ludiques sur une soirée ou une demie-journée, ou vous offrir des scénarios clé en main pour instaurer vos propres ateliers teambuilding.
-image1: img1.jpg
-title2: Mise en valeur de patrimoine
-description2: Que vous vouliez rendre hommage à un lieu, une histoire ou toute autre forme de patrimoine, faites le de façon ludique ! Nous pouvons créer sur mesure un scénario de découverte autour de votre patrimoine... et même l’animer !
-image2: img1.jpg
-title3: Fil rouge événementiel
-description3: Vous avez un salon à organiser, ou un événement d’importance qui arrive, et il vous faut l’agrémenter de fils rouges ou d’activités parallèles ? Nous sommes là pour ça ! Confiez nous la gestion de ces parties, et nous saurons les rendre ludiques pour votre public.
-image3: img1.jpg
+
+items: 
+  team: 
+    title: Team building
+    description: Fédérez vos équipes en offrant un moment convivial à vos collaborateurs ! Nous pouvons organiser des activités ludiques sur une soirée ou une demie-journée, ou vous offrir des scénarios clé en main pour instaurer vos propres ateliers teambuilding.
+    image: 01.jpg
+  patrimoine:
+    title: Mise en valeur de patrimoine
+    description: Que vous vouliez rendre hommage à un lieu, une histoire ou toute autre forme de patrimoine, faites le de façon ludique ! Nous pouvons créer sur mesure un scénario de découverte autour de votre patrimoine... et même l’animer !
+    image: 02.jpg
+  event:
+    title: Fil rouge événementiel
+    description: Vous avez un salon à organiser, ou un événement d’importance qui arrive, et il vous faut l’agrémenter de fils rouges ou d’activités parallèles ? Nous sommes là pour ça ! Confiez nous la gestion de ces parties, et nous saurons les rendre ludiques pour votre public.
+    image: 03.jpg

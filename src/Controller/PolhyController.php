@@ -16,8 +16,6 @@ class PolhyController extends Controller
     {
         $values = Yaml::parseFile($kernel->getProjectDir().'/public/polhy.yml');
 
-        return $this->render('polhy/index.html.twig', [
-            'values' => $values,
-        ]);
+        return $this->render('polhy/index.html.twig', $values);
     }
 }

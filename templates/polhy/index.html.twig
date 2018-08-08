@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{{ values.society }} - {{ values.catchphrase }}</title>
+    <title>{{ society }} - {{ catchphrase }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -27,15 +27,15 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">{{ values.society }}</a>
+        <a class="navbar-brand" href="#">{{ society }}</a>
       </div>
     </nav>
 
-    <header class="masthead text-center text-white" style='background-image: url("{{ asset('img/top.jpg') }}");'>
+    <header class="masthead text-center text-white" style='background-image: url("{{ asset('img/' ~ img) }}");'>
       <div class="masthead-content">
         <div class="container">
-          <h1 class="masthead-heading mb-0">{{ values.society }}</h1>
-          <h2 class="masthead-subheading mb-0">{{ values.catchphrase }}</h2>
+          <h1 class="masthead-heading mb-0">{{ society }}</h1>
+          <h2 class="masthead-subheading mb-0">{{ catchphrase }}</h2>
         </div>
       </div>
     </header>
@@ -45,72 +45,39 @@
         <div class="row align-items-center">
           <div class="col-lg-12 order-lg-1">
             <div class="p-5">
-              <p>{{ values.description }}</p>
+              <p>{{ description }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+{% for item in items %}
     <section>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/01.jpg" alt="">
+              <img class="img-fluid rounded-circle" src="{{ asset('img/' ~ item.image) }}" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
-              <h2 class="display-4">{{ values.title1 }}</h2>
-              <p>{{ values.description1 }}</p>
+              <h2 class="display-4">{{ item.title }}</h2>
+              <p>{{ item.description }}</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/02.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4">{{ values.title2 }}</h2>
-              <p>{{ values.description2 }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/03.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">{{ values.title3 }}</h2>
-              <p>{{ values.description3 }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+{% endfor %}
 
     <!-- Footer -->
     <footer class="py-5 bg-black">
       <div class="container">
-        <p class="m-0 text-center text-white small">Contact : <a href="mailto:{{ values.contact }}">{{ values.contact }}</a></p>
-        <p class="m-0 text-center text-white small">Copyright &copy; {{ values.society }} {{ "now"|date("Y") }}</p>
+        <p class="m-0 text-center text-white small">Contact : <a href="mailto:{{ contact }}">{{ contact }}</a></p>
+        <p class="m-0 text-center text-white small">Copyright &copy; {{ society }} {{ "now"|date("Y") }}</p>
       </div>
       <!-- /.container -->
     </footer>
