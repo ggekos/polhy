@@ -19,3 +19,28 @@ items:
     title: Fil rouge événementiel
     description: Vous avez un salon à organiser, ou un événement d’importance qui arrive, et il vous faut l’agrémenter de fils rouges ou d’activités parallèles ? Nous sommes là pour ça ! Confiez nous la gestion de ces parties, et nous saurons les rendre ludiques pour votre public.
     image: 03.jpg
+
+description_realisation: |
+  Vous trouverez ici quelques exemples de nos réalisations passées. Tous nos événements sont, par nature, uniques, mais vous pouvez vous inspirer de ces thèmes pour vos demandes de prestation !
+  Toutes ces réalisations sont volontairement anonymisées par respect pour nos clients.
+  Les photos arrivent bientôt !
+
+realisations:
+    escape_room_interne: 
+      title: Escape room (interne)
+      description: Dans le cadre d'une activité de team building, nous enfermons des employées dans leur locaux pendant le week-end… A eux de trouver comment en sortir ! Plusieurs énigmes, adaptées aux locaux. En utilisant les spécificités du lieux et faisant courir tout le monde partout, cet événement à permis à tous les collaborateurs de s'approprier leur lieu de travail, et y associer des souvenirs différents de leur quotidien.
+    escape_room_externe:
+      title: Escape room (externe)
+      description: Pour un client ne souhaitant pas utiliser ses propres locaux, nous en avons trouvé un autre en périphérie. Ambiance dépaysante et changement de décor pour une escape room à thème. Toujours sur le principe de résoudre des énigmes pour trouver une sortie, avec quelques bonbons et frayeurs pour fêter Halloween en équipe.
+    jeu_de_piste:
+      title: Jeu de piste
+      description: Il est parfois difficile de trouver le temps de sortir et découvrir les environs de son lieu de travail en semaine. Un jeu de piste est le moyen idéal de battre la campagne environnante en s'amusant ! Et ça permet de travailler avec une autre équipe que celle de tous les jours.
+    murder_party:
+      title: Murder Party
+      description: Dans le cadre d'une collaboration avec une association et une collectivité. Afin de mettre en avant un édifice historique, nous avons scénarisé pour les journées du Patrimoine un "cluedo géant" pour le public. Grâce à la coordination avec une association locale, nous avons pu fournir des personnages "d'époque" pour l'orchestrer. Qui a pu tuer le contremaitre ? Aux joueurs de passage de le découvrir en menant l'enquête auprès des personnages et en accomplissant quelques efforts… historiques !
+    parties_organisees:
+      title: Parties organisées
+      description: Difficile de ne choisir qu'un exemple de cette activité plus que récurrente chez nous… Nous pouvons mettre simplement des jeux à disposition, ou aller jusqu'à organiser des tournois de parties commentées avec diffusion en direct. Entre ceux deux extrêmes, nous pouvons fournir une sélection de jeux à thème ou animer des parties.
+    pocast:
+      title: Podcast live
+      description: Difficile de faire le tour de nos réalisations sans citer quelques aspects de notre "origin story"… L'enregistrement d'émissions audio ou vidéo en ligne. Nous l'avons fait sur plusieurs événements geeks, avec des émissions spéciales.

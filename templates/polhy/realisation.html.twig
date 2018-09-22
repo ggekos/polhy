@@ -16,9 +16,11 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/one-page-wonder.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
   </head>
 
@@ -41,43 +43,26 @@
       </div>
     </nav>
 
-    <header class="masthead text-center text-white" style='background-color:a8224a
-    {# background-image: url("{{ asset('img/top.jpg') }}"); #}
-    '>
+    <header class="masthead text-center text-white" style='height:20px;background-color:a8224a'>
       <div class="masthead-content">
         <div class="container">
           <h1 class="masthead-heading mb-0">{{ society }}</h1>
-          <h2 class="masthead-subheading mb-0">{{ catchphrase }}</h2>
         </div>
       </div>
     </header>
+    <section>
+<br/>
 
+{% for key, item in realisations %}
     <section>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-lg-12 order-lg-1">
+          <div class="col-lg-12 order-lg-6">
             <div class="p-5">
-              <p>{{ description }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-{% for item in items %}
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="{{ asset('img/' ~ item.image) }}" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">{{ item.title }}</h2>
-              <p>{{ item.description }}</p>
+              <div data-toggle="collapse" href="#{{key}}" aria-expanded="false" aria-controls="collapseExample" class="panel-heading collapsed"><h2 class="display-4">{{ item.title }}<i class="chevron fa fa-fw" ></i></h2></div>
+              <div class="collapse" id="{{key}}">
+                <p>{{ item.description }}</p>
+              </div>
             </div>
           </div>
         </div>

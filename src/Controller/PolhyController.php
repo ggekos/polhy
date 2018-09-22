@@ -18,6 +18,24 @@ class PolhyController extends Controller
     public function index(KernelInterface $kernel, Request $request, \Swift_Mailer $mailer)
     {
         $values = Yaml::parseFile($kernel->getProjectDir().'/public/polhy.yml');
+        return $this->render('polhy/index.html.twig', $values);
+    }
+
+    /**
+     * @Route("/realisation", name="realisation")
+     */
+    public function realisation(KernelInterface $kernel, Request $request, \Swift_Mailer $mailer)
+    {
+        $values = Yaml::parseFile($kernel->getProjectDir().'/public/polhy.yml');
+        return $this->render('polhy/realisation.html.twig', $values);
+    }
+
+        /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact(KernelInterface $kernel, Request $request, \Swift_Mailer $mailer)
+    {
+        $values = Yaml::parseFile($kernel->getProjectDir().'/public/polhy.yml');
 
         $contact = new Contact();
 
@@ -44,8 +62,7 @@ class PolhyController extends Controller
     
         }
 
-        return $this->render('polhy/index.html.twig', $values +
-        [
+        return $this->render('polhy/contact.html.twig',$values + [
             'form' => $form->createView(),
             'success' => $success
         ]);
