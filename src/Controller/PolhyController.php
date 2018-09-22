@@ -44,8 +44,8 @@ class PolhyController extends Controller
     
         }
 
-        return $this->render('polhy/index.html.twig', [
-            'values' => $values,
+        return $this->render('polhy/index.html.twig', $values +
+        [
             'form' => $form->createView(),
             'success' => $success
         ]);
