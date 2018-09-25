@@ -22,12 +22,12 @@ class PolhyController extends Controller
     }
 
     /**
-     * @Route("/realisation", name="realisation")
+     * @Route("/realisations", name="realisation")
      */
     public function realisation(KernelInterface $kernel, Request $request, \Swift_Mailer $mailer)
     {
         $values = Yaml::parseFile($kernel->getProjectDir().'/public/polhy.yml');
-        return $this->render('polhy/realisation.html.twig', $values);
+        return $this->render('polhy/realisations.html.twig', $values);
     }
 
         /**

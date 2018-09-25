@@ -6,6 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class ContactType extends AbstractType
 {
@@ -13,7 +14,9 @@ class ContactType extends AbstractType
     {
         $builder
             ->add('email')
-            ->add('content')
+            ->add('content', TextareaType::class, [
+                'attr' => ['rows' => 8]
+            ])
             ->add('save', SubmitType::class)
         ;
     }
