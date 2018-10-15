@@ -74,6 +74,7 @@
               <div data-toggle="collapse" href="#{{key}}" aria-expanded="false" aria-controls="collapseExample" class="panel-heading collapsed" style="cursor: pointer;"><h2 style="font-size:30px" class="display-4">{{ item.title }}<i class="chevron fa fa-fw" ></i></h2></div>
               <div class="collapse" id="{{key}}">
                 <p>{{ item.description }}</p>
+                {% if item.image is defined %}<img class="img-fluid" src="{{ asset('img/' ~ item.image) }}">{% endif %}
               </div>
             </div>
           </div>

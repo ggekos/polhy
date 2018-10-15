@@ -14,11 +14,11 @@ items:
   patrimoine:
     title: Mise en valeur de patrimoine
     description: Que vous vouliez rendre hommage à un lieu, une histoire ou toute autre forme de patrimoine, faites le de façon ludique ! Nous pouvons créer sur mesure un scénario de découverte autour de votre patrimoine... et même l’animer !
-    image: 02.jpg
+    image: patrimoine.jpg
   event:
     title: Fil rouge événementiel
     description: Vous avez un salon à organiser, ou un événement d’importance qui arrive, et il vous faut l’agrémenter de fils rouges ou d’activités parallèles ? Nous sommes là pour ça ! Confiez nous la gestion de ces parties, et nous saurons les rendre ludiques pour votre public.
-    image: 03.jpg
+    image: rouge.jpg
 
 description_realisation: |
   Vous trouverez ici quelques exemples de nos réalisations passées. Tous nos événements sont, par nature, uniques, mais vous pouvez vous inspirer de ces thèmes pour vos demandes de prestation !
@@ -32,6 +32,7 @@ realisations:
     escape_room_externe:
       title: Escape room (externe)
       description: Pour un client ne souhaitant pas utiliser ses propres locaux, nous en avons trouvé un autre en périphérie. Ambiance dépaysante et changement de décor pour une escape room à thème. Toujours sur le principe de résoudre des énigmes pour trouver une sortie, avec quelques bonbons et frayeurs pour fêter Halloween en équipe.
+      image: escape.jpg
     jeu_de_piste:
       title: Jeu de piste
       description: Il est parfois difficile de trouver le temps de sortir et découvrir les environs de son lieu de travail en semaine. Un jeu de piste est le moyen idéal de battre la campagne environnante en s'amusant ! Et ça permet de travailler avec une autre équipe que celle de tous les jours.
@@ -44,3 +45,4 @@ realisations:
     pocast:
       title: Podcast live
       description: Difficile de faire le tour de nos réalisations sans citer quelques aspects de notre "origin story"… L'enregistrement d'émissions audio ou vidéo en ligne. Nous l'avons fait sur plusieurs événements geeks, avec des émissions spéciales.
+      image: podcast.jpg
