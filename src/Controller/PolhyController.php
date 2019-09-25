@@ -48,7 +48,7 @@ class PolhyController extends Controller
             $success = true;
 
             $message = (new \Swift_Message('Nouveau contact site internet'))
-            ->setFrom('nozutbm@gmail.com')
+            ->setFrom('contact@colella.fr')
             ->setTo('polhy.entertainment@gmail.com')
             ->setBody(
                 "Contenu du message : <br/>"
